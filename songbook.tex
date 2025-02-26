@@ -37,7 +37,7 @@
 % 页眉页脚样式
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small Ed Sheeran 歌词集}
+\fancyhead[L]{\small \leftmark}  % 显示当前章节标题
 \fancyhead[R]{\small \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -46,8 +46,8 @@
     {\Large\bfseries\color{titlecolor}}  % 格式
     {}                                   % 标签
     {0em}                               % 分隔距离
-    {\centering}                        % 标题前
-    [\vspace{0.5em}\centering\rule{0.8\textwidth}{0.4pt}]  % 标题后
+    {\raggedright}                       % 左对齐
+    [\rule{\textwidth}{0.4pt}]  % 添加铺满页宽的下划线
 
 % 目录样式
 \renewcommand{\cfttoctitlefont}{\Huge\bfseries\color{titlecolor}}
