@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[UTF8]{ctex}
+\usepackage[UTF8,fontset=none]{ctex}  % 禁用默认字体设置
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{fancyhdr}  % 自定义页眉页脚
@@ -8,6 +8,11 @@
 \usepackage{setspace}  % 行距控制
 \usepackage{tocloft}   % 目录样式定制
 \usepackage{ragged2e}  % 更好的文本对齐
+
+% 全局设置中文字体
+\setCJKmainfont[Path=/System/Library/Fonts/]{PingFang.ttc}
+\setCJKsansfont[Path=/System/Library/Fonts/]{PingFang.ttc}
+\setCJKmonofont[Path=/System/Library/Fonts/]{PingFang.ttc}
 
 % 页面设置
 \geometry{
