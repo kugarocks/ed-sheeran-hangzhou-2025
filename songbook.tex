@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}  % 自定义页眉页脚
+\usepackage{titlesec}  % 自定义标题样式
+\usepackage{xcolor}    % 颜色支持
+\usepackage{setspace}  % 行距控制
+\usepackage{tocloft}   % 目录样式定制
+\usepackage{ragged2e}  % 更好的文本对齐
+
+% 页面设置
+\geometry{
+    a4paper,
+    margin=2.5cm,
+    headheight=15pt
+}
+
+% 颜色定义
+\definecolor{titlecolor}{RGB}{70,70,70}
+\definecolor{linkcolor}{RGB}{28,111,167}
+
+% 超链接样式
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor
+}
+
+% 页眉页脚样式
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Taylor Swift 歌词集}
+\fancyhead[R]{\small \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% 标题样式
+\titleformat{\section}
+    {\Large\bfseries\color{titlecolor}}  % 格式
+    {}                                   % 标签
+    {0em}                               % 分隔距离
+    {\centering}                        % 标题前
+    [\vspace{0.5em}\centering\rule{0.8\textwidth}{0.4pt}]  % 标题后
+
+% 目录样式
+\renewcommand{\cfttoctitlefont}{\Large\bfseries\color{titlecolor}}
+\renewcommand{\cftaftertoctitle}{\vspace{1em}}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+
+% 行距设置
+\onehalfspacing
+
+% 文档信息
+\title{\Large\textbf{Taylor Swift 歌词集}}
+\author{\large 精选歌词}
+\date{}
+
+\begin{document}
+
+% 标题页样式
+\begin{titlepage}
+\begin{center}
+\vspace*{5cm}
+{\Huge\bfseries Taylor Swift\par}
+\vspace{1cm}
+{\Large\bfseries 歌词集\par}
+\vspace{2cm}
+{\large\textit{精选歌词}\par}
+\vfill
+{\large\today\par}
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% 歌词部分
+\clearpage  % 确保从新页开始
+\input{taylor-swift/love-story}
+\clearpage  % 在歌曲之间强制分页
+\input{taylor-swift/you-belong-with-me}
+
+\end{document} 
