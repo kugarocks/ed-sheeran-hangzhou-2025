@@ -10,7 +10,7 @@ src: $(foreach x, resume, $x.pdf)
 resume.pdf: $(SRC_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(SRC_DIR) $<
 
-songbook.pdf: songbook.tex taylor-swift/love-story.tex taylor-swift/you-belong-with-me.tex
+songbook.pdf: songbook.tex ed-sheeran/castle-on-the-hill.tex ed-sheeran/shivers.tex
 	$(CC) songbook.tex
 	$(CC) songbook.tex
 
