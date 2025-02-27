@@ -10,10 +10,10 @@
 \usepackage{ragged2e}  % 更好的文本对齐
 
 % 全局设置中文字体
-\setmainfont[Path=/System/Library/Fonts/]{PingFang.ttc}  % 设置英文主字体
-\setCJKmainfont[Path=/System/Library/Fonts/]{PingFang.ttc}
-\setCJKsansfont[Path=/System/Library/Fonts/]{PingFang.ttc}
-\setCJKmonofont[Path=/System/Library/Fonts/]{PingFang.ttc}
+\setmainfont{PingFang SC}  % 设置英文主字体
+\setCJKmainfont{PingFang SC}   % 直接使用字体名称
+\setCJKsansfont{PingFang SC}
+\setCJKmonofont{PingFang SC}
 
 % 页面设置
 \geometry{
@@ -43,7 +43,7 @@
 
 % 标题样式
 \titleformat{\section}
-    {\Large\bfseries\color{titlecolor}}  % 格式
+    {\Large\color{titlecolor}}  % 格式
     {}                                   % 标签
     {0em}                               % 分隔距离
     {\raggedright}                       % 左对齐
@@ -51,7 +51,7 @@
 
 % 目录样式
 \renewcommand{\contentsname}{曲目列表}
-\renewcommand{\cfttoctitlefont}{\Huge\bfseries\color{titlecolor}}
+\renewcommand{\cfttoctitlefont}{\Huge\color{titlecolor}}
 \renewcommand{\cftaftertoctitle}{\vspace{1em}}
 \renewcommand{\cftsecfont}{\large}
 \renewcommand{\cftsecpagefont}{\large}
@@ -71,9 +71,9 @@
 \begin{titlepage}
 \begin{center}
 \vspace*{5cm}
-{\Huge\bfseries Ed Sheeran @Hangzhou 2025\par}
+{\Huge Ed Sheeran @Hangzhou 2025\par}
 \vspace{1cm}
-{\Large\bfseries 歌单 \& 歌词\par}
+{\Large 歌单 \& 歌词\par}
 \vspace{1cm}
 {\large 翻译：DeepSeek-V3\par}
 \vfill
