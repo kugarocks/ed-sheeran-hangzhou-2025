@@ -33,9 +33,12 @@ Ed Sheeran 2025 年杭州演唱会的完整歌单及歌词翻译。
 21. Shape of You
 22. Bad Habits
 
-## 下载 PDF
+## 下载
 
-[点击这里下载完整歌单 PDF](ed-sheeran-hangzhou-2025.pdf)
+| 平台 | 下载链接 |
+| --- | --- |
+| 阿里云 | https://www.kugarocks.com/ed-sheeran-hangzhou-2025.pdf |
+| GitHub | https://raw.githubusercontent.com/kugarocks/ed-sheeran-hangzhou-2025/main/ed-sheeran-hangzhou-2025.pdf |
 
 ## 贡献
 
